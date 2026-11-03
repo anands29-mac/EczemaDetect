@@ -1,0 +1,203 @@
+{
+  "disclaimer": "EczemaDetect is a student machine-learning project, not a medical device. Its prediction is a pattern match on one photo and can be wrong; many conditions (fungal infection, psoriasis, scabies, skin cancer) can look like eczema. Use it to learn and to prepare questions for a clinician, not to diagnose or treat yourself.",
+  "red_flags": [
+    "Yellow/honey-coloured crusts, pus, rapidly spreading redness, warmth, or fever (possible infection)",
+    "Painful clusters of punched-out blisters or sores on eczema, especially with fever (eczema herpeticum, needs same-day care)",
+    "Rash near the eyes, on the genitals, or covering a large part of the body",
+    "Sudden swelling and pain in one leg (rule out a blood clot urgently)",
+    "Open sores or ulcers that are not healing",
+    "Itch that disrupts sleep, or no improvement after 1-2 weeks of careful self-care"
+  ],
+  "general_care": [
+    "Moisturise at least twice a day with a fragrance-free cream or ointment; apply within a few minutes of bathing to lock in water",
+    "Keep showers short and lukewarm; use a gentle, fragrance-free cleanser instead of soap",
+    "Pat skin dry rather than rubbing",
+    "Wear soft, breathable fabrics like cotton; avoid scratchy wool",
+    "Keep nails short and try cool compresses when itch flares to reduce scratch damage",
+    "Notice and write down triggers (products, foods you suspect, stress, weather, sweat) to discuss with a clinician"
+  ],
+  "sources": [
+    {"title": "National Eczema Association: Types of eczema", "url": "https://nationaleczema.org/types-of-eczema/"},
+    {"title": "American Academy of Dermatology: Eczema types", "url": "https://www.aad.org/public/diseases/eczema"}
+  ],
+  "conditions": {
+    "Atopic Dermatitis": {
+      "is_eczema": true,
+      "summary": "The most common, long-lasting form of eczema. The skin barrier leaks moisture and lets irritants in, and the immune system over-reacts, causing dry, very itchy, inflamed patches that flare and settle.",
+      "typical_look": [
+        "Dry, rough, itchy patches; red on lighter skin, darker brown, purple or grey on darker skin",
+        "Inner elbows, behind the knees, neck, hands and face (cheeks and scalp in babies)",
+        "Thickened, leathery skin where it has been scratched for a long time"
+      ],
+      "causes": [
+        "Genetics: weaker skin-barrier proteins (e.g. filaggrin); often runs in families with asthma or hay fever",
+        "Immune system that over-reacts to everyday irritants",
+        "Triggers: dry or cold air, hot showers, harsh soaps and fragrances, sweat, wool, stress, dust mites, pet dander, and skin infections (often Staph bacteria)"
+      ],
+      "self_care": [
+        "'Soak and seal': short lukewarm bath, then thick fragrance-free moisturiser within 3 minutes",
+        "Moisturise the whole body at least twice daily, even when skin looks clear",
+        "Use fragrance-free detergents and cleansers; rinse clothes well",
+        "Keep bedrooms cool and use a humidifier in dry weather",
+        "Identify and avoid personal triggers; manage stress and sleep"
+      ],
+      "medical_options": [
+        "Topical corticosteroids for flares (strength chosen by a clinician for body area and age)",
+        "Steroid-free creams such as calcineurin inhibitors, PDE-4 inhibitors or topical JAK inhibitors",
+        "Wet-wrap therapy, phototherapy, or for moderate-to-severe disease biologic injections or oral JAK inhibitors",
+        "Antibiotics or antivirals if the skin becomes infected"
+      ],
+      "see_doctor_if": "Itch disrupts sleep or daily life, the rash spreads or weeps, or there are signs of infection.",
+      "source": "https://www.aad.org/public/diseases/eczema/types/atopic-dermatitis"
+    },
+    "Contact Dermatitis": {
+      "is_eczema": true,
+      "summary": "A rash caused by something touching the skin, either an irritant that damages it directly or an allergen the immune system reacts to.",
+      "typical_look": [
+        "Red or darkened, itchy or burning rash where the substance touched the skin, often with sharp edges",
+        "Blisters, oozing or crusting in allergic reactions; dry, cracked skin in irritant reactions",
+        "Hands, face, eyelids, wrists (watch straps), earlobes (earrings), waist (belt buckles) are common"
+      ],
+      "causes": [
+        "Irritant (most common): frequent hand-washing, wet work, detergents, solvents, cleaning products, friction",
+        "Allergic: nickel and other metals, fragrances, preservatives in cosmetics, hair dye, rubber/latex chemicals, some topical antibiotics, poison ivy/oak",
+        "Allergic reactions can appear 1-3 days after contact, which makes the cause easy to miss"
+      ],
+      "self_care": [
+        "Find and stop contact with the suspected product; wash the area with lukewarm water",
+        "Cool, wet compresses to calm itch and oozing",
+        "Use gloves for wet work and cleaning (cotton liners under rubber/vinyl gloves)",
+        "Switch to fragrance-free, preservative-light products and add one new product at a time",
+        "Apply a plain barrier moisturiser after washing hands"
+      ],
+      "medical_options": [
+        "Topical corticosteroids; a short course of oral steroids for severe or widespread reactions",
+        "Patch testing by a dermatologist to identify the exact allergen",
+        "Antihistamines may help sleep but do not treat the rash itself"
+      ],
+      "see_doctor_if": "The rash is on the face or genitals, is widespread, blisters badly, or keeps coming back without a clear cause (ask about patch testing).",
+      "source": "https://www.aad.org/public/diseases/eczema/types/contact-dermatitis"
+    },
+    "Dyshidrotic Eczema": {
+      "is_eczema": true,
+      "summary": "Also called pompholyx. Small, deep, intensely itchy blisters appear on the palms, sides of the fingers and soles, then dry and peel over a few weeks.",
+      "typical_look": [
+        "Tiny fluid-filled blisters, like tapioca, on the palms, sides of fingers or soles",
+        "Burning or itching before blisters appear",
+        "Peeling, cracked, painful skin as blisters dry"
+      ],
+      "causes": [
+        "Exact cause is unknown; more common with atopic dermatitis or hay fever",
+        "Triggers: stress, sweaty hands/feet, warm humid weather, wet work",
+        "Contact with metals such as nickel or cobalt (including in some foods), or a reaction to a fungal infection elsewhere"
+      ],
+      "self_care": [
+        "Soak hands/feet in cool water or apply cool compresses for 15 minutes, then moisturise",
+        "Do not pop or pick blisters (raises infection risk)",
+        "Keep hands dry and protected: cotton-lined gloves for wet tasks, remove rings when washing",
+        "Manage sweating and stress; moisturise right after hand-washing"
+      ],
+      "medical_options": [
+        "Potent topical corticosteroids (hands and feet usually need stronger ones)",
+        "Drying soaks (e.g. aluminium acetate) for oozing blisters",
+        "Phototherapy, newer topical treatments for chronic hand eczema, or oral medicines for severe cases",
+        "Treat any fungal infection; patch testing if a contact allergy is suspected"
+      ],
+      "see_doctor_if": "Blisters are large, painful, keep returning, or show signs of infection (pus, increasing pain, red streaks).",
+      "source": "https://www.aad.org/public/diseases/eczema/types/dyshidrotic-eczema"
+    },
+    "Nummular Dermatitis": {
+      "is_eczema": true,
+      "summary": "Also called discoid eczema. Distinct coin-shaped patches that can itch, ooze, crust and be slow to clear.",
+      "typical_look": [
+        "Round or oval, well-defined patches 1-10 cm across",
+        "Lower legs, forearms, backs of hands and torso",
+        "May start as small bumps/blisters that join, then weep, crust and scale"
+      ],
+      "causes": [
+        "Very dry skin, especially in cold, dry winter air",
+        "Minor skin injury (insect bite, scrape, burn) that sets off inflammation",
+        "Poor circulation and swelling in the legs; contact allergens (e.g. metals, fragrance); bacterial colonisation"
+      ],
+      "self_care": [
+        "Moisturise thickly twice a day; ointments work better than lotions",
+        "Use a humidifier in winter; short lukewarm showers",
+        "Protect skin from scrapes and bites; avoid scratching",
+        "Avoid fragranced products and wool against the skin"
+      ],
+      "medical_options": [
+        "Usually needs a medium-to-strong topical corticosteroid, sometimes under occlusion",
+        "Antibiotics if patches are infected (crusting, pus)",
+        "Phototherapy or other treatments for stubborn cases"
+      ],
+      "see_doctor_if": "Patches persist beyond 1-2 weeks of self-care, weep or crust, or you are unsure. Ringworm (a fungal infection) can look very similar and needs different treatment.",
+      "source": "https://www.aad.org/public/diseases/eczema/types/nummular-dermatitis"
+    },
+    "Seborrheic Dermatitis": {
+      "is_eczema": true,
+      "summary": "A common rash in oily areas of the skin, linked to an inflammatory reaction to Malassezia, a yeast that normally lives on skin. Dandruff is its mildest form; in babies it is called cradle cap.",
+      "typical_look": [
+        "Greasy, yellowish or white flaky scale on red or discoloured patches",
+        "Scalp, eyebrows, sides of the nose, behind the ears, beard area, mid-chest",
+        "Lighter (hypopigmented) patches can appear on darker skin"
+      ],
+      "causes": [
+        "Overgrowth of / reaction to Malassezia yeast in oily skin areas",
+        "Triggers: stress, fatigue, cold dry weather, illness, hormonal changes",
+        "More common in infants, adults 30-60, and people with some neurological or immune conditions"
+      ],
+      "self_care": [
+        "Medicated shampoo with ketoconazole, selenium sulfide, zinc pyrithione, coal tar or salicylic acid; leave on 5 minutes before rinsing, rotate if one stops working",
+        "Use it on the face/beard area too (lather, wait, rinse) a few times a week",
+        "Wash the face daily with a gentle cleanser; avoid alcohol-based products",
+        "Soften thick scalp scale with mineral or olive oil before washing"
+      ],
+      "medical_options": [
+        "Antifungal creams or shampoos (e.g. ketoconazole, ciclopirox)",
+        "Short courses of a mild topical corticosteroid, or steroid-free calcineurin inhibitors / roflumilast for the face"
+      ],
+      "see_doctor_if": "Over-the-counter shampoos do not help after a few weeks, the rash spreads beyond oily areas, or it is very red and sore.",
+      "source": "https://www.aad.org/public/diseases/eczema/types/seborrheic-dermatitis"
+    },
+    "Stasis Dermatitis": {
+      "is_eczema": true,
+      "summary": "Eczema of the lower legs caused by poor blood flow in the leg veins (venous insufficiency). Blood pools, pressure builds, and fluid leaks into the skin.",
+      "typical_look": [
+        "Swelling around the ankles that is worse at the end of the day",
+        "Red, brown, purple or rusty discolouration, itching, scaling on the lower legs",
+        "Over time: thick, hard skin, and sometimes open sores (venous ulcers) near the ankle"
+      ],
+      "causes": [
+        "Chronic venous insufficiency: weak valves in leg veins (often with varicose veins)",
+        "Previous blood clot (DVT), leg injury or surgery",
+        "Excess weight, long periods of standing or sitting, pregnancy, older age; heart or kidney conditions that cause swelling"
+      ],
+      "self_care": [
+        "Raise the legs above heart level for ~15 minutes several times a day and when sleeping if possible",
+        "Walk and do ankle/calf exercises regularly to pump blood up the legs",
+        "Wear compression stockings, after a clinician confirms they are safe for your circulation",
+        "Moisturise daily with a plain emollient; protect legs from knocks and scratches"
+      ],
+      "medical_options": [
+        "Treating the vein problem (compression therapy, vein procedures) by a doctor or vascular specialist",
+        "Topical corticosteroids for itchy flares; wound care for ulcers",
+        "Antibiotics if cellulitis (spreading, warm, painful redness) develops"
+      ],
+      "see_doctor_if": "Always worth a doctor's visit, since the underlying circulation problem needs assessment. Seek urgent care for sudden one-sided leg swelling with pain, open sores, or spreading warm redness.",
+      "source": "https://www.aad.org/public/diseases/eczema/types/stasis-dermatitis"
+    },
+    "Normal": {
+      "is_eczema": false,
+      "summary": "The model did not find a pattern matching the eczema types it was trained on. This photo looks most similar to healthy skin in its training data.",
+      "typical_look": [],
+      "causes": [],
+      "self_care": [
+        "Keep skin healthy with daily fragrance-free moisturiser and sun protection",
+        "If you still have itch, rash or changes the photo may not capture (lighting, angle, early stage), take another clear, close, well-lit photo or see a clinician"
+      ],
+      "medical_options": [],
+      "see_doctor_if": "You have symptoms despite this result. The model only knows 6 eczema types and cannot recognise other skin conditions.",
+      "source": "https://nationaleczema.org/types-of-eczema/"
+    }
+  }
+}

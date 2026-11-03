@@ -1,0 +1,17 @@
+# datasets & caches (too big for git)
+Eczema_dataset/
+archive (1)/
+*.zip
+data_cache/
+_to_delete/
+
+# training outputs
+models/*_last.pt
+models/efficientnet_b0_imagenet.pth
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/

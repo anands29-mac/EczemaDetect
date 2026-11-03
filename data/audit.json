@@ -1,0 +1,39 @@
+{
+  "files_found": 12457,
+  "unreadable": 0,
+  "unique_images": 10432,
+  "exact_copies_removed": 2025,
+  "label_conflicting_dropped": 149,
+  "near_duplicate_pairs": 852,
+  "mixed_label_groups_dropped": 8,
+  "final_images": 10226,
+  "split_counts": {
+    "train": {
+      "Atopic Dermatitis": 982,
+      "Contact Dermatitis": 798,
+      "Dyshidrotic Eczema": 1085,
+      "Normal": 1103,
+      "Nummular Dermatitis": 1096,
+      "Seborrheic Dermatitis": 1174,
+      "Stasis Dermatitis": 915
+    },
+    "val": {
+      "Atopic Dermatitis": 211,
+      "Contact Dermatitis": 171,
+      "Dyshidrotic Eczema": 233,
+      "Normal": 237,
+      "Nummular Dermatitis": 235,
+      "Seborrheic Dermatitis": 252,
+      "Stasis Dermatitis": 196
+    },
+    "test": {
+      "Atopic Dermatitis": 211,
+      "Contact Dermatitis": 172,
+      "Dyshidrotic Eczema": 233,
+      "Normal": 237,
+      "Nummular Dermatitis": 236,
+      "Seborrheic Dermatitis": 252,
+      "Stasis Dermatitis": 197
+    }
+  }
+}

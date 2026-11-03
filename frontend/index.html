@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EczemaDetect</title>
+  <meta name="description" content="Upload a skin photo to see which of six eczema types it most resembles, with causes and care guidance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Schibsted+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="/">EczemaDetect</a>
+      <span class="model-tag" id="modelTag" hidden></span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro" id="intro">
+      <h1>Check a skin photo against six types of eczema</h1>
+      <p class="lede">Upload a close, well-lit photo of the affected skin. A neural network trained on about 7,000 images estimates whether it looks like eczema, which type it most resembles, and shows where in the photo it was looking.</p>
+
+      <label class="drop" id="drop" tabindex="0">
+        <input type="file" id="file" accept="image/*" hidden>
+        <svg class="drop-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="17" cy="21" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M6 33l10-8 8 6 7-5 11 8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        <span class="drop-main">Choose a photo or drop it here</span>
+        <span class="drop-sub">JPG, PNG or WEBP, up to 12 MB. Photos are analysed and not stored.</span>
+      </label>
+
+      <ul class="tips">
+        <li>Fill most of the frame with the affected area</li>
+        <li>Use daylight, no flash, and keep the camera steady</li>
+        <li>One area per photo</li>
+      </ul>
+    </section>
+
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+
+    <section class="result" id="result" hidden>
+      <div class="viewer">
+        <div class="frame">
+          <img id="photo" alt="Your uploaded photo">
+          <img id="heat" alt="Heatmap of the regions that influenced the prediction" hidden>
+        </div>
+        <div class="seg" role="group" aria-label="Image view">
+          <button type="button" class="seg-btn is-on" data-view="photo" aria-pressed="true">Your photo</button>
+          <button type="button" class="seg-btn" data-view="heat" aria-pressed="false">Where the model looked</button>
+        </div>
+        <p class="caption" id="viewCaption">Warmer colours in the heatmap mark the regions that pushed the model toward its answer. If the hot spot is on the background rather than the skin, don't trust the result.</p>
+        <button type="button" class="again" id="again">Check another photo</button>
+      </div>
+
+      <div class="analysis">
+        <div class="verdict" id="verdict">
+          <p class="verdict-kicker" id="kicker"></p>
+          <h2 id="verdictTitle"></h2>
+          <p class="verdict-conf" id="verdictConf"></p>
+          <div class="warnings" id="warnings"></div>
+        </div>
+
+        <div class="probs">
+          <h3>How the model weighed each type</h3>
+          <ol id="probList" class="prob-list"></ol>
+        </div>
+
+        <div class="info" id="info"></div>
+
+        <aside class="flags">
+          <h3>Get medical help promptly if you notice</h3>
+          <ul id="flagList"></ul>
+        </aside>
+
+        <p class="disclaimer" id="disclaimer"></p>
+        <p class="sources" id="sources"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <p>A student machine-learning project. Not a diagnosis. Built with PyTorch and FastAPI.</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

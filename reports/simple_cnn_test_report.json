@@ -1,0 +1,74 @@
+{
+  "arch": "simple_cnn",
+  "checkpoint_epoch": 14,
+  "tta": true,
+  "temperature": 0.8176049590110779,
+  "test_images": 1538,
+  "accuracy": 0.5754226267880365,
+  "macro_f1": 0.5729367358062181,
+  "top2_accuracy": 0.7457737321196359,
+  "eczema_vs_normal": {
+    "accuracy": 0.9856957087126138,
+    "sensitivity (eczema caught)": 0.9900076863950807,
+    "specificity (normal kept normal)": 0.9620253164556962,
+    "roc_auc": 0.9969221987630418
+  },
+  "subtype_accuracy_on_eczema_images": 0.5100931677018633,
+  "per_class": {
+    "Atopic Dermatitis": {
+      "precision": 0.5073891625615764,
+      "recall": 0.4881516587677725,
+      "f1-score": 0.4975845410628019,
+      "support": 211.0
+    },
+    "Contact Dermatitis": {
+      "precision": 0.7790055248618785,
+      "recall": 0.8197674418604651,
+      "f1-score": 0.7988668555240793,
+      "support": 172.0
+    },
+    "Dyshidrotic Eczema": {
+      "precision": 0.475177304964539,
+      "recall": 0.2875536480686695,
+      "f1-score": 0.3582887700534759,
+      "support": 233.0
+    },
+    "Normal": {
+      "precision": 0.946058091286307,
+      "recall": 0.9620253164556962,
+      "f1-score": 0.9539748953974896,
+      "support": 237.0
+    },
+    "Nummular Dermatitis": {
+      "precision": 0.33458646616541354,
+      "recall": 0.3771186440677966,
+      "f1-score": 0.3545816733067729,
+      "support": 236.0
+    },
+    "Seborrheic Dermatitis": {
+      "precision": 0.5014409221902018,
+      "recall": 0.6904761904761905,
+      "f1-score": 0.5809682804674458,
+      "support": 252.0
+    },
+    "Stasis Dermatitis": {
+      "precision": 0.5220125786163522,
+      "recall": 0.4213197969543147,
+      "f1-score": 0.46629213483146065,
+      "support": 197.0
+    },
+    "accuracy": 0.5754226267880365,
+    "macro avg": {
+      "precision": 0.5808100072351812,
+      "recall": 0.578058956664415,
+      "f1-score": 0.5729367358062181,
+      "support": 1538.0
+    },
+    "weighted avg": {
+      "precision": 0.5748648502358374,
+      "recall": 0.5754226267880365,
+      "f1-score": 0.5682143062978221,
+      "support": 1538.0
+    }
+  }
+}
