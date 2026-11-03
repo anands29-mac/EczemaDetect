@@ -175,3 +175,26 @@ EczemaDetect/
 
 `src/train_cnn.py` and `dataset/Model.py` are the original Keras drafts, kept for reference
 (they don't run as-is: missing imports, `data/` folder path).
+
+---
+
+## 🗺️ Roadmap
+
+The original vision for EczemaDetect, and where each piece stands:
+
+| Planned feature | Status |
+|---|---|
+| CNN that classifies 6 eczema types (+ healthy skin) | ✅ Done: EfficientNet-B0, 84.9% test accuracy (PyTorch) |
+| FastAPI backend for inference | ✅ Done: `/api/predict`, `/api/health` |
+| Confidence levels | ✅ Done: temperature-calibrated, with an "unsure" flag |
+| Heatmap overlay | ✅ Done: Grad-CAM "where the model looked" |
+| Causes and recommended care per type | ✅ Done: `backend/knowledge.json` |
+| Severity score (mild / moderate / severe) | ⬜ Planned: needs severity-labelled data |
+| Symptom survey (dryness, redness, itch, flare frequency, family history) combined with the image prediction | ⬜ Planned (draft questions in `dataset/Model.py`) |
+| MongoDB (Atlas) storage for surveys, predictions and images | ⬜ Planned (`database/`) |
+| User dashboard: prediction history, symptom trends, severity over time, PDF export | ⬜ Planned |
+| React frontend (currently plain HTML/CSS/JS) | ⬜ Planned |
+| Three.js / React-Three-Fiber 3D skin model with severity highlighting | ⬜ Planned |
+| "Other skin condition" class (psoriasis, ringworm, ...) | ⬜ Planned |
+| Docker + public deployment | ⬜ Planned |
+| CI that runs tests on every push (`.github/workflows/blank.yml` is a placeholder) | ⬜ Planned |
